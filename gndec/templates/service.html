@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaishnavi Waddi - Resume</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        .resume {
+            width: 850px;
+            max-width: 95%;
+            margin: 30px auto;
+            background: white;
+            padding: 40px;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 3px solid #172b4d;
+            padding-bottom: 20px;
+            margin-bottom: 25px;
+        }
+
+        header h1 {
+            font-size: 34px;
+            color: #172b4d;
+            margin-bottom: 8px;
+        }
+
+        header p {
+            color: #555;
+            font-size: 14px;
+        }
+
+        .contact {
+            margin-top: 8px;
+            font-size: 14px;
+        }
+
+        .contact a {
+            color: #1769aa;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+
+        section {
+            margin-bottom: 25px;
+        }
+
+        section h2 {
+            font-size: 20px;
+            color: #172b4d;
+            border-bottom: 2px solid #172b4d;
+            padding-bottom: 5px;
+            margin-bottom: 12px;
+        }
+
+        section h3 {
+            font-size: 16px;
+            color: #222;
+            margin-bottom: 4px;
+        }
+
+        p {
+            font-size: 14px;
+            color: #444;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        .project {
+            margin-bottom: 16px;
+        }
+
+        .project h3 {
+            color: #1769aa;
+        }
+
+        .education {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .education th,
+        .education td {
+            border: 1px solid #ddd;
+            padding: 9px;
+            text-align: left;
+            font-size: 13px;
+        }
+
+        .education th {
+            background: #172b4d;
+            color: white;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .skill {
+            background: #eef4fa;
+            color: #172b4d;
+            padding: 6px 12px;
+            border-radius: 5px;
+            font-size: 13px;
+        }
+
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 25px;
+            padding-top: 15px;
+            border-top: 1px solid #ddd;
+            font-size: 12px;
+            color: #777;
+        }
+
+        @media print {
+            body {
+                background: white;
+            }
+
+            .resume {
+                width: 100%;
+                max-width: 100%;
+                margin: 0;
+                box-shadow: none;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .resume {
+                padding: 20px;
+            }
+
+            .two-column {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="resume">
+
+    <!-- HEADER -->
+    <header>
+
+        <h1>VAISHNAVI WADDI</h1>
+
+        <p>
+            B.E. Electronics & Communication Engineering
+        </p>
+
+        <div class="contact">
+            📧 vaishnaviwaddi@gmail.com |
+            📱 +91 9035105133
+            <br>
+
+            <a href="#" target="_blank">
+                LinkedIn: Vaishnavi Waddi
+            </a>
+
+            |
+
+            <a href="#" target="_blank">
+                GitHub: vaishnaviwaddi
+            </a>
+        </div>
+
+    </header>
+
+
+    <!-- CAREER OBJECTIVE -->
+    <section>
+
+        <h2>Career Objective</h2>
+
+        <p>
+            To associate with a progressive organization where I can utilize
+            and enhance my technical knowledge and skills, contribute
+            effectively to organizational growth, and continuously develop
+            myself through learning and practical experience.
+        </p>
+
+    </section>
+
+
+    <!-- ACADEMIC PROFILE -->
+    <section>
+
+        <h2>Academic Profile</h2>
+
+        <table class="education">
+
+            <tr>
+                <th>Qualification</th>
+                <th>Institution</th>
+                <th>Score</th>
+                <th>Year</th>
+            </tr>
+
+            <tr>
+                <td>B.E. - ECE</td>
+                <td>VTU - GNDEC</td>
+                <td>8.81 CGPA</td>
+                <td>2027</td>
+            </tr>
+
+            <tr>
+                <td>P.U.</td>
+                <td>Maate Manikeshwari PU College, Bidar</td>
+                <td>77.8%</td>
+                <td>2023</td>
+            </tr>
+
+            <tr>
+                <td>CBSE</td>
+                <td>Karnataka Public School, Bidar</td>
+                <td>94.6%</td>
+                <td>2021</td>
+            </tr>
+
+        </table>
+
+    </section>
+
+
+    <!-- PROJECTS -->
+    <section>
+
+        <h2>Projects Done</h2>
+
+
+        <div class="project">
+
+            <h3>AI Gym & Fitness Training Assistant</h3>
+
+            <p>
+                Developed an AI-powered fitness application using Python
+                and Streamlit for personalized workout planning, BMI
+                analysis, diet recommendations, and calorie tracking.
+            </p>
+
+        </div>
+
+
+        <div class="project">
+
+            <h3>Electric Vehicle with Driver Assistance System</h3>
+
+            <p>
+                Designed and developed a government-funded electric vehicle
+                prototype under the NAIN 2.0 Innovation Program.
+            </p>
+
+        </div>
+
+
+        <div class="project">
+
+            <h3>Voice-Controlled Wheelchair</h3>
+
+            <p>
+                Designed and developed a voice-controlled wheelchair using
+                Arduino and Bluetooth for hands-free mobility assistance.
+            </p>
+
+        </div>
+
+
+        <div class="project">
+
+            <h3>Kevlar-Based Lightweight Drone</h3>
+
+            <p>
+                Designed and developed a lightweight drone using Kevlar
+                for improved structural strength, durability, and impact
+                resistance.
+            </p>
+
+        </div>
+
+
+        <div class="project">
+
+            <h3>AI-Powered Mental Health Chatbot</h3>
+
+            <p>
+                Developed an AI-powered conversational chatbot designed
+                to provide personalized emotional support and wellness
+                guidance.
+            </p>
+
+        </div>
+
+
+        <div class="project">
+
+            <h3>Smart Blind Stick</h3>
+
+            <p>
+                Developed a smart assistive stick to detect obstacles
+                and improve navigation for visually impaired users.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- COMPUTER LITERACY -->
+    <section>
+
+        <h2>Computer Literacy & Technical Skills</h2>
+
+        <div class="skills">
+
+            <span class="skill">MS Word</span>
+            <span class="skill">MS Excel</span>
+            <span class="skill">MS PowerPoint</span>
+            <span class="skill">Basic Python</span>
+            <span class="skill">VLSI</span>
+            <span class="skill">Embedded System</span>
+            <span class="skill">MATLAB</span>
+            <span class="skill">AI Tools</span>
+            <span class="skill">Canva</span>
+            <span class="skill">ChatGPT</span>
+
+        </div>
+
+    </section>
+
+
+    <!-- CERTIFICATIONS -->
+    <section>
+
+        <h2>Additional Certifications</h2>
+
+        <ul>
+
+            <li>
+                Certificate in NPTEL Course/Examination
+            </li>
+
+            <li>
+                Certificate of Participation in Hackathons
+            </li>
+
+            <li>
+                Certificate in Artificial Intelligence – Unlox Academy
+            </li>
+
+            <li>
+                Certificate in Think, Create, Engineer Program –
+                PALS, IIT Hyderabad
+            </li>
+
+            <li>
+                Certificate in IEEE Student Membership
+            </li>
+
+        </ul>
+
+    </section>
+
+
+    <!-- ACHIEVEMENTS -->
+    <section>
+
+        <h2>Achievements</h2>
+
+        <ul>
+
+            <li>
+                Selected under the NAIN 2.0 program and received
+                ₹2 lakhs in government funding for project development.
+            </li>
+
+            <li>
+                First Prize in Essay Writing Competition
+            </li>
+
+            <li>
+                Second Prize in Drawing Competition
+            </li>
+
+            <li>
+                Second Prize in Photography Competition
+            </li>
+
+            <li>
+                Second Prize in Nature Photography Competition
+            </li>
+
+            <li>
+                Second Prize in Dance Competition
+            </li>
+
+        </ul>
+
+    </section>
+
+
+    <!-- PERSONAL STRENGTHS -->
+    <section>
+
+        <h2>Personal Strengths</h2>
+
+        <div class="skills">
+
+            <span class="skill">Adaptability</span>
+            <span class="skill">Accountability</span>
+            <span class="skill">Confidence</span>
+            <span class="skill">Diligence</span>
+            <span class="skill">Easy Going</span>
+            <span class="skill">Responsibility</span>
+            <span class="skill">Open Minded</span>
+            <span class="skill">Smart Working</span>
+            <span class="skill">Goal-Oriented</span>
+            <span class="skill">Flexible</span>
+            <span class="skill">Focused</span>
+            <span class="skill">Bold</span>
+            <span class="skill">Independent</span>
+            <span class="skill">Resilient</span>
+            <span class="skill">Ownership</span>
+
+        </div>
+
+    </section>
+
+
+    <!-- EXTRACURRICULAR ACTIVITIES -->
+    <section>
+
+        <h2>Extracurricular Activities</h2>
+
+        <p>
+            Active involvement in NCC and participation in creative,
+            cultural, and personal development activities.
+        </p>
+
+        <p style="margin-top:8px;">
+
+            <strong>Activities:</strong>
+            Dancing, Painting, Writing, Reading Books,
+            Listening to Stories, Cooking, Playing Games,
+            Paper Craft & Creative DIY.
+
+        </p>
+
+    </section>
+
+
+    <!-- LANGUAGES -->
+    <section>
+
+        <h2>Regional Languages</h2>
+
+        <div class="skills">
+
+            <span class="skill">English</span>
+            <span class="skill">Kannada</span>
+            <span class="skill">Hindi</span>
+            <span class="skill">Telugu</span>
+
+        </div>
+
+    </section>
+
+
+    <!-- PERSONAL PROFILE -->
+    <section>
+
+        <h2>Personal Profile</h2>
+
+        <div class="two-column">
+
+            <div>
+
+                <p>
+                    <strong>Date of Birth:</strong>
+                    22-06-2005
+                </p>
+
+                <p>
+                    <strong>Gender:</strong>
+                    Female
+                </p>
+
+                <p>
+                    <strong>Marital Status:</strong>
+                    Unmarried
+                </p>
+
+            </div>
+
+            <div>
+
+                <p>
+                    <strong>Place:</strong>
+                    Guru Bhavan, GNDEC Bidar
+                </p>
+
+                <p>
+                    <strong>Date:</strong>
+                    1st September 2026
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        © 2026 Vaishnavi Waddi | B.E. Electronics & Communication Engineering
+
+    </footer>
+
+</div>
+
+</body>
+</html>

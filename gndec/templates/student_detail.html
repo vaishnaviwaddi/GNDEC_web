@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile - {{ student.name }}</title>
+    <!-- Tailwind CSS for modern styling -->
+    <script src="https://tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans min-h-screen flex items-center justify-center p-6">
+
+    <div class="w-full max-w-lg bg-white shadow-lg rounded-xl overflow-hidden border border-gray-100">
+        <!-- Header Banner with Student Initials -->
+        <div class="bg-gradient-to-r from-blue-600 to-indigo-700 px-6 py-8 text-center text-white relative">
+            <div class="w-20 h-20 bg-white/20 backdrop-blur-md rounded-full mx-auto flex items-center justify-center border border-white/40 mb-3 shadow-inner">
+                <span class="text-3xl font-bold uppercase tracking-wider">
+                    {{ student.name|slice:":2" }}
+                </span>
+            </div>
+            <h1 class="text-2xl font-bold tracking-tight">{{ student.name }}</h1>
+            <p class="text-blue-100 text-sm mt-1">Department of {{ student.dept }}</p>
+        </div>
+
+        <!-- Student Data Profile Fields -->
+        <div class="p-6 space-y-4">
+            <!-- Unique Control Number Field -->
+            <div class="flex items-center justify-between py-2 border-b border-gray-100">
+                <span class="text-sm font-semibold text-gray-500 uppercase tracking-wider">Control Number (UCN)</span>
+                <span class="text-sm font-mono bg-gray-100 text-gray-800 font-medium px-2.5 py-1 rounded border border-gray-200">
+                    {{ student.ucn }}
+                </span>
+            </div>
+
+            <!-- Department Field -->
+            <div class="flex items-center justify-between py-2 border-b border-gray-100">
+                <span class="text-sm font-semibold text-gray-500 uppercase tracking-wider">Department</span>
+                <span class="text-sm text-gray-900 font-medium">{{ student.dept }}</span>
+            </div>
+
+            <!-- Email Field -->
+            <div class="flex items-center justify-between py-2">
+                <span class="text-sm font-semibold text-gray-500 uppercase tracking-wider">Email Address</span>
+                <a href="mailto:{{ student.email }}" class="text-sm text-blue-600 hover:text-blue-700 hover:underline font-medium">
+                    {{ student.email }}
+                </a>
+            </div>
+        </div>
+
+        <!-- Action Control Bar -->
+        <div class="bg-gray-50 px-6 py-4 flex items-center justify-between border-t border-gray-100">
+            <!-- Back to Directory -->
+            <a href="{% url 'student-list' %}" class="text-sm font-medium text-gray-600 hover:text-gray-800 flex items-center gap-1 transition duration-150">
+                ← Back to List
+            </a>
+
+            <!-- Mutative Options -->
+            <div class="flex space-x-3">
+                <a href="{% url 'student-update' student.pk %}" class="bg-amber-500 hover:bg-amber-600 text-white text-sm font-medium py-2 px-4 rounded-lg shadow-sm transition duration-150">
+                    Edit Profile
+                </a>
+                <a href="{% url 'student-delete' student.pk %}" class="bg-red-600 hover:bg-red-700 text-white text-sm font-medium py-2 px-4 rounded-lg shadow-sm transition duration-150">
+                    Delete
+                </a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
